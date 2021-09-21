@@ -27,7 +27,7 @@
       FormGroup
     },
     mounted() {
-      console.log("orderProperties",orderProperties)
+      console.log("orderProperties",this.orderProperties)
     }
   }
 </script>
