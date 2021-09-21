@@ -29,6 +29,7 @@ watch:{
 },
   methods: {
     getComponentInputName (property) {
+      console.log("getComponentInputName",property)
       if (property.IS_PHONE === 'Y') {
         return 'phone-input'
       }
