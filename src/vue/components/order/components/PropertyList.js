@@ -19,7 +19,8 @@ export default {
   },
   computed: {
     ...mapGetters({
-      orderProperties: 'getOrderPropertiesNotRelation'
+      //orderProperties: 'getOrderPropertiesNotRelation'
+      orderProperties: 'orderProperties'
     })
   },
 watch:{
