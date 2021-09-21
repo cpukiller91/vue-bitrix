@@ -2,7 +2,7 @@
 /** Подключение стилей */
 import './scss/main.scss';
 import 'es6-promise/auto'
-//import './js/InputMask'
+import './js/InputMask'
 import favorite from './js/favorites'
 import(/* webpackChunkName: "vue" */ './vue')
 

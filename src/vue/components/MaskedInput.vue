@@ -43,6 +43,7 @@
       maskInit () {
         let vm = this
         let parameters = Object.assign({}, vm.parameters, {
+
           oncomplete () {
             vm.isComplete = true
             vm.$emit('input', window.$(this).val())
@@ -52,7 +53,7 @@
             vm.$emit('input', window.$(this).val())
           }
         })
-
+          console.log("Inputmask-->maskInit",parameters)
         window.$(this.$el).val(this.value)
         this.isComplete = Inputmask(parameters).mask(this.$el).isComplete()
 
