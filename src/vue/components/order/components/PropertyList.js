@@ -22,6 +22,11 @@ export default {
       orderProperties: 'getOrderPropertiesNotRelation'
     })
   },
+watch:{
+  orderProperties(nv){
+    console.log("orderPropertiesLISTER",this.orderProperties)
+  }
+},
   methods: {
     getComponentInputName (property) {
       if (property.IS_PHONE === 'Y') {

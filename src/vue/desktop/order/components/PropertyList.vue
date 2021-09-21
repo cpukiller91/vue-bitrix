@@ -4,7 +4,7 @@
             <template slot="label" slot-scope="{property}">
                 <label v-if="property.TYPE === 'Y/N'" class="col-3 col-form-label"></label>
                 <label v-else class="col-3 col-form-label" :for="'ORDER_PROP_' + property.ID">{{property.NAME}} <span
-                        v-if="property.REQUIRED === 'Y'">*</span></label>
+                        v-if="property.REQUIRED === 'Y'">*!</span></label>
             </template>
             <template slot-scope="{property}">
                 <div class="col-9">
