@@ -25,6 +25,9 @@
 
     components: {
       FormGroup
+    },
+    mounted() {
+      console.log("orderProperties",orderProperties)
     }
   }
 </script>

@@ -15,7 +15,7 @@ export default {
     })
   },
   getProductRows: state => {
-    console.log("getProductRows",state.order)
+    //console.log("getProductRows",state.order)
     return state.order['GRID']['ROWS']
   },
   getOrderTotal: state => {
