@@ -41,8 +41,9 @@ Inputmask.extendAliases({
 class InputMask {
   constructor () {
     $(document).ready(() => {
+
+      InputMask.refresh()
       console.log("$(document).ready")
-      //InputMask.refresh()
 
       $(document).on('ajaxSuccess', function () {
         console.log("$(document).on('ajaxSuccess'")
