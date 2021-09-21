@@ -1,0 +1,139 @@
+.flex-auto {
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+}
+
+.flex-remain {
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+}
+
+.sizes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sizes--margin {
+  margin: -2.5px;
+}
+
+.sizes--margin-low {
+  margin: -1px;
+}
+
+.size {
+  -ms-flex-align: center;
+      align-items: center;
+  border: 1px solid #dbdbdb;
+  color: #2b2b2b;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  outline: 0;
+  width: 45px;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.size:not(.size--disabled):hover,
+.size--active:not(.size--disabled) {
+  background-color: #8c6c3d;
+  border-color: #8c6c3d;
+  color: #FFF;
+}
+
+.size--low {
+  height: 29px;
+  width: 29px;
+}
+
+.size--margin {
+  margin: 2.5px;
+}
+
+.size--margin-low {
+  margin: 1px;
+}
+
+.size--disabled {
+  color: #a0a0a0;
+  border-color: #FFF;
+  background-color: #FFF;
+}
+
+.delivery-item__description {
+  text-transform: none;
+}
+
+.delivery-item__description a {
+  color: #b99d6b !important;
+}
+
+.filter--overflow {
+  overflow-y: auto;
+}
+
+.filter__item {
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #ebeff2;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  transition: color .25s;
+}
+
+.filter__item:first-child {
+  border-top: 1px solid #ebeff2;
+}
+
+.filter__item:hover,
+.filter__item:active {
+  color: #8c6c3d;
+}
+
+.filter__color {
+  height: 35px;
+  width: 35px;
+}
+
+.checkbox {
+  position: relative;
+  margin: 0;
+}
+
+.checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__input:checked+.checkbox__label {
+  color: #8c6c3d;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+  transition-duration: .4s;
+  width: 14px;
+}
+
+.checkbox__label::after {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAbElEQVR42mMgFeycmx0PxLtJ1ZQCxP+BuJkUTXVQTf4wARMiNE2CarJBFjwMxA/waFoP1aSOLsEHxLeA+DUQM6PJHQXiP0Asgc85R4H4FxCzQvl3gfgdlA8F+J31EYgfAfF5UoN8KRAfIaQOAGYqVWexY857AAAAAElFTkSuQmCC) no-repeat;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 9px;
+  left: calc(100% - 14px);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  transition: width .2s ease-out;
+  width: 0;
+}
+
+.checkbox--disabled .checkbox__label,
+.checkbox--disabled .checkbox__input:checked+.checkbox__label {
+  color: #a0a0a0;
+}

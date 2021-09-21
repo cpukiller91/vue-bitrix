@@ -1,0 +1,30 @@
+@import "../variables";
+
+.filter {
+  //position: relative;
+
+  &--overflow {
+    overflow-y: auto;
+  }
+
+  &__item {
+    align-items: center;
+    border-bottom: 1px solid #ebeff2;
+    display: flex;
+    height: 45px;
+    transition: color $transition;
+
+    &:first-child {
+      border-top: 1px solid #ebeff2;
+    }
+
+    &:hover, &:active {
+      color: $orange;
+    }
+  }
+
+  &__color {
+    height: 35px;
+    width: 35px;
+  }
+}

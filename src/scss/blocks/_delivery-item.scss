@@ -1,0 +1,9 @@
+.delivery-item {
+  &__description {
+    text-transform: none;
+
+    & a {
+      color: #b99d6b !important;
+    }
+  }
+}

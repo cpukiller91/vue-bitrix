@@ -1,0 +1,11 @@
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--margin {
+    margin: -2.5px;
+    &-low {
+      margin: -1px;
+    }
+  }
+}
