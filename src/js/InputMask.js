@@ -41,14 +41,14 @@ Inputmask.extendAliases({
 class InputMask {
   constructor () {
     $(document).ready(() => {
-      InputMask.refresh()
+      //InputMask.refresh()
 
       $(document).on('ajaxSuccess', function () {
-        InputMask.refresh()
+        //InputMask.refresh()
       })
 
       BX.addCustomEvent('onAjaxSuccess', function () {
-        InputMask.refresh()
+        //InputMask.refresh()
       })
     })
   }
