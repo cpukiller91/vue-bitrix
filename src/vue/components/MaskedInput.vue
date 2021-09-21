@@ -53,7 +53,7 @@
             vm.$emit('input', window.$(this).val())
           }
         })
-          console.log("Inputmask-->maskInit",parameters)
+          //console.log("Inputmask-->maskInit",parameters)
         window.$(this.$el).val(this.value)
         this.isComplete = Inputmask(parameters).mask(this.$el).isComplete()
 

@@ -43,16 +43,16 @@ class InputMask {
     $(document).ready(() => {
 
       InputMask.refresh()
-      console.log("$(document).ready")
+      //console.log("$(document).ready")
 
       $(document).on('ajaxSuccess', function () {
-        console.log("$(document).on('ajaxSuccess'")
-        //InputMask.refresh()
+        //console.log("$(document).on('ajaxSuccess'")
+        InputMask.refresh()
       })
 
       BX.addCustomEvent('onAjaxSuccess', function () {
-        console.log("$(BX).addCustomEvent('onAjaxSuccess'")
-        //InputMask.refresh()
+        //console.log("$(BX).addCustomEvent('onAjaxSuccess'")
+        InputMask.refresh()
       })
     })
   }
