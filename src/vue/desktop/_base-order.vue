@@ -14,7 +14,7 @@
                       @submit.prevent="saveOrder()">
                     <div id="order_form_content" class="row pt-4">
                         <div class="col-7">
-                            <!--property-list></property-list-->
+                            <property-list></property-list>
                             <delivery-list></delivery-list>
                             <property-relation-list></property-relation-list>
                             <order-coupon></order-coupon>

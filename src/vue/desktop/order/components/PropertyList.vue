@@ -6,12 +6,12 @@
                 <label v-else class="col-3 col-form-label" :for="'ORDER_PROP_' + property.ID">{{property.NAME}} <span
                         v-if="property.REQUIRED === 'Y'">*</span></label>
             </template>
-            <!--template slot-scope="{property}">
+            <template slot-scope="{property}">
                 <div class="col-9">
-                    <component :is="getComponentInputName(property)"
+                    <component :is="getComponentInputName(property)" v-if="property"
                                :property="property"></component>
                 </div>
-            </template-->
+            </template>
         </form-group>
     </div>
 </template>
@@ -28,7 +28,7 @@
     },
     watch:{
         orderProperties(nv){
-            console.log("orderProperties",nv)
+            console.log("orderProperties",this.orderProperties)
         }
     },
     mounted() {
