@@ -7,6 +7,11 @@ export default {
       'paymentId',
       'paymentList'
     ]),
+    watch:{
+      paymentList(nv){
+        console.log( "paymentList",nv)
+      }
+    },
     value: {
       get () {
         return this.paymentId
