@@ -21,6 +21,7 @@ class API {
    */
   async refreshOrder (formDataPromise) {
     let formData = await formDataPromise
+    console.log("refreshOrder - api",formData)
     formData.append(this.actionName, 'refreshOrderAjax')
     return httpClient.post(this.url, formData)
   }
