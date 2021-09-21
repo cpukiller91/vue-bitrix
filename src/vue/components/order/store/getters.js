@@ -131,6 +131,7 @@ export default {
       formData.append(`ORDER_PROP_${key}`, value)
       formData.append(`order[ORDER_PROP_${key}]`, value)
     })
+    console.log("getFormData-getters",formData)
     return formData
   }
 }
