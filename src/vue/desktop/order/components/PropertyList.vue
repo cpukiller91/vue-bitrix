@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="orderProperties">
         <form-group class="row" v-for="property in orderProperties" :property="property" :key="property.ID">
             <template slot="label" slot-scope="{property}">
                 <label v-if="property.TYPE === 'Y/N'" class="col-3 col-form-label"></label>
