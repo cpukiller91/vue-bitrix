@@ -26,8 +26,13 @@
     components: {
       FormGroup
     },
+    watch:{
+        orderProperties(nv){
+            console.log("orderProperties",nv)
+        }
+    },
     mounted() {
-      console.log("orderProperties",this.orderProperties)
+
     }
   }
 </script>
