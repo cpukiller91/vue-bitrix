@@ -2,6 +2,7 @@ import _ from 'lodash'
 
 export default {
   orderProperties: state => {
+    console.log("ORDER_PROP->",state.order['ORDER_PROP'])
     return state.order['ORDER_PROP'].properties
   },
   getOrderPropertiesNotRelation: (state, getters) => {
