@@ -24,7 +24,7 @@ export default {
   },
 watch:{
   orderProperties(nv){
-    console.log("orderPropertiesLISTER",this.orderProperties)
+    console.log("getOrderPropertiesNotRelation",this.orderProperties)
   }
 },
   methods: {
