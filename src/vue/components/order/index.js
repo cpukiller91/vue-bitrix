@@ -27,7 +27,7 @@ export default {
   created () {
     this.setApiParameters()
     this.setOrder(this.order)
-    // this.SET_ADDITION_FORM_DATA(this.formData)
+    this.SET_ADDITION_FORM_DATA(this.formData)
     // window.addEventListener('BasketReload', () => {
     //   this.refresh()
     // })
