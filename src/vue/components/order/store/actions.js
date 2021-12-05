@@ -3,6 +3,7 @@ import api from '../api'
 
 export default {
   setOrder ({commit, state, getters, dispatch}, order) {
+    console.log("setOrder",order)
     commit('SET_ORDER', order)
     commit('SET_PROPERTIES_VALUE', _.reduce(order.ORDER_PROP.properties, (result, item) => {
       result[item['ID']] = _.result(item, 'VALUE[0]', '')
