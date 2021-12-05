@@ -166,7 +166,7 @@ export default {
         })
         .then(() => {
           commit('SET_AJAX_PROCESS', false)
-          //console.log("SET_AJAX_PROCESS",response)
+          console.log("SET_AJAX_PROCESS",response)
         })
     })
   }
