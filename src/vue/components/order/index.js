@@ -53,7 +53,7 @@ export default {
       api.setAjaxUrl(this.ajaxUrl)
       api.setActionName(this.actionVariable)
 
-      // this.refresh()
+      console.log("setApiParameters",this.ajaxUrl,this.actionVariable)
     },
     hasErrorByName (name) {
       return Object.keys(this.errorList[name]).length > 0
