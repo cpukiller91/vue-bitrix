@@ -160,13 +160,14 @@ export default {
     return new Promise((resolve, reject) => {
       httpPromise
         .then(response => {
+          console.log("sendAjax",response)
           resolve(response.data)
         }, error => {
           reject(error)
         })
         .then(() => {
           commit('SET_AJAX_PROCESS', false)
-          console.log("SET_AJAX_PROCESS",response)
+
         })
     })
   }

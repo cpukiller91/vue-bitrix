@@ -28,9 +28,9 @@ export default {
     this.setApiParameters()
     this.setOrder(this.order)
     this.SET_ADDITION_FORM_DATA(this.formData)
-    // window.addEventListener('BasketReload', () => {
-    //   this.refresh()
-    // })
+    window.addEventListener('BasketReload', () => {
+      this.refresh()
+    })
   },
   watch: {
     getOrderValuesAddition: {
