@@ -49,7 +49,7 @@ export default {
       let formData = getters.getFormData(submit)
 
 
-      if(getters.deliveryList){
+      if(formData){
         Object.values(getters.deliveryList).forEach(delivery => {
           if(delivery.EXTRA_JS) {
             try
