@@ -47,21 +47,25 @@ export default {
 
       let formData = getters.getFormData(submit)
 
-      console.log("formData",getters)
 
-      Object.values(getters.deliveryList).forEach(delivery => {
-        if(delivery.EXTRA_JS) {
-          try
-          {
-            let extra = new Function(`return ${delivery.EXTRA_JS}`)
-            let extraData = extra()
-            Object.keys(extraData).forEach(key => {
-              formData.append(submit ? key : `order[${key}]`, extraData[key])
-            })
+      if(getters.deliveryList){
+        Object.values(getters.deliveryList).forEach(delivery => {
+          if(delivery.EXTRA_JS) {
+            try
+            {
+              let extra = new Function(`return ${delivery.EXTRA_JS}`)
+              let extraData = extra()
+              Object.keys(extraData).forEach(key => {
+                formData.append(submit ? key : `order[${key}]`, extraData[key])
+              })
+            }
+            catch (e) {}
           }
-          catch (e) {}
-        }
-      })
+        })
+      }else{
+        console.log("Error: formData deliveryList construction",getters.deliveryList)
+      }
+
       resolve(formData)
     })
   },
