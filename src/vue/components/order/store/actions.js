@@ -64,7 +64,7 @@ export default {
           }
         })
       }else{
-        console.log("Error: formData deliveryList construction",getters.deliveryList)
+        console.log("Error: formData deliveryList construction",formData)
       }
 
       resolve(formData)
