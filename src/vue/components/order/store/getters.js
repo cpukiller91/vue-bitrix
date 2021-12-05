@@ -2,7 +2,7 @@ import _ from 'lodash'
 
 export default {
   orderProperties: state => {
-    console.log("ORDER_PROP->",state.order['ORDER_PROP'])
+    console.log("ORDER_PROP-------->",state.order['ORDER_PROP'])
     return state.order['ORDER_PROP'].properties
   },
   getOrderPropertiesNotRelation: (state, getters) => {
@@ -62,12 +62,15 @@ export default {
   },
   // данные по доставке
   deliveryList: state => {
+      // console.log("deliveryList",state.order['DELIVERY'])
     return state.order['DELIVERY']
   },
   delivery: (state, getters) => {
+    // console.log("delivery",getters.getChecked(getters.deliveryList))
     return getters.getChecked(getters.deliveryList)
   },
   deliveryId: (state, getters) => {
+    // console.log("deliveryId",getters.delivery.ID)
     return +getters.delivery.ID || null
   },
   // данные по платежным системам

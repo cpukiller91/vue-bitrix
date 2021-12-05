@@ -44,7 +44,11 @@ export default {
   },
   async formData ({getters}, submit = false) {
     return new Promise((resolve, reject) => {
+
       let formData = getters.getFormData(submit)
+
+      console.log("formData",getters)
+
       Object.values(getters.deliveryList).forEach(delivery => {
         if(delivery.EXTRA_JS) {
           try
