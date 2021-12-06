@@ -96,9 +96,9 @@ export default {
           }
 
           if (data.order.ID > 0 && data.order.REDIRECT_URL) {
-
-            yaCounter30546807.reachGoal('SaleOrderSubmit')
             document.location.href = data.order.REDIRECT_URL
+            yaCounter30546807.reachGoal('SaleOrderSubmit')
+
 
           } else {
             commit('SET_ERRORS', {
